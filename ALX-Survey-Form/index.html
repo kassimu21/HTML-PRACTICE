@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ALX STUDENT SURVEY FORM</title>
+</head>
+<body>
+  <h1 id="title">ALX STUDENT SURVEY FORM</h1>
+  <p id="description">Please fill out the form below to participate in our survey.</p>
+  
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required>
+    </fieldset>
+    <fieldset>
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </fieldset>
+    <fieldset>
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" name="age" placeholder="Enter your age" min="1" max="120" required>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which Cohort are you?</label>
+      <select id="dropdown" name="role" required>
+        <option value="">Select an option</option>
+        <option value="cohort 19">Cohort 19</option>
+        <option value="cohort 20">Cohort 20</option>
+        <option value="cohort 21">Cohort 21</option>
+        <option value="cohort 22">Cohort 22</option>
+        <option value="others">Others</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend this survey to a friend?</legend>
+      <label for="recommend-yes">
+  <input type="radio" id="recommend-yes" name="recommend" value="yes" class="inline" checked>Yes
+</label>
+<label for="recommend-no">
+  <input type="radio" id="recommend-no" name="recommend" value="no" class="inline">No
+</label>
+<label for="recommend-not-sure">
+  <input type="radio" id="recommend-not-sure" name="recommend" value="not sure" class="inline">Not Sure
+</label> 
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <label for="improve-projects"><input type="checkbox" id="improve-projects" name="improve" value="projects" class="inline">Projects</label>
+      <label for="improve-curriculums"><input type="checkbox" id="improve-curriculums" name="improve" value="curriculums" class="inline">Curriculums</label>
+      <label for="improve-evaluation-quizes"><input type="checkbox" id="improve-evaluation-quizes" name="improve" value="evaluation-quizes" class="inline">Evaluation Quizes</label>
+      <label for="improve-discord"><input type="checkbox" id="improve-discord" name="improve" value="discord" class="inline">Discord</label>
+      <label for="improve-gitHub-student-developer-pack"><input type="checkbox" id="improve-gitHub-student-developer-pack" name="improve" value="gitHub-student-developer-pack" class="inline">GitHub Student Developer Pack</label>
+      <label for="improve-peer-learning-day"><input type="checkbox" id="improve-peer-learning-day" name="improve" value="peer-learning-day" class="inline">Peer Learning Day</label>
+      <label for="improve-upcoming-events"><input type="checkbox" id="improve-upcoming-events" name="improve" value="upcoming-events" class="inline">Upcoming Events</label>
+      <label for="improve-portfolio-projects"><input type="checkbox" id="improve-portfolio-projects" name="improve" value="portfolio-projects" class="inline">Portfolio Projects</label>
+      <label for="improve-se-foundation"><input type="checkbox" id="improve-se-foundation" name="improve" value="se-foundation" class="inline">SE Foundation</label>
+      <label for="improve-specialization"><input type="checkbox" id="improve-specialization" name="improve" value="specialization" class="inline">Specialization</label>
+      <label for="improve-others"><input type="checkbox" id="improve-others" name="improve" value="others" class="inline">Others</label>
+    </fieldset>
+    <fieldset>
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
