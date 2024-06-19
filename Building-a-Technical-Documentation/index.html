@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>UAV Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Terminology"
+            >Terminology</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Classification_Types"
+            >Classification Types</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Range_and_Endurance">Range and Endurance</a></li>
+        <li><a class="nav-link" href="#Size">Size</a></li>
+        <li>
+          <a class="nav-link" href="#Weight"
+            >Weight</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Degree_of_Autonomy">Degree of Autonomy</a></li>
+        <li>
+          <a class="nav-link" href="#Altitude">Altitude</a>
+        </li>
+        <li><a class="nav-link" href="#Design">Design</a></li>
+        <li><a class="nav-link" href="#Aircraft_Configuration">Aircraft Configuration</a></li>
+        <li>
+          <a class="nav-link" href="#Propulsion"
+            >Propulsion</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Computer_Control_Systems">Computer Control Systems</a></li>
+        <li>
+          <a class="nav-link" href="#Autonomy"
+            >Autonomy</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">      <header>Introduction</header>      <article>
+          <p>
+            An unmanned aerial vehicle (UAV), commonly known as a drone, is an aircraft without any human pilot, crew, or passengers on board. UAVs were originally developed through the twentieth century for military missions too "dull, dirty or dangerous" for humans, and by the twenty-first, they had become essential assets to most militaries. As control technologies improved and costs fell, their use expanded to many non-military applications. These include aerial photography, area coverage, precision agriculture, forest fire monitoring, river monitoring, environmental monitoring, policing and surveillance, infrastructure inspections, smuggling, product deliveries, entertainment, and drone racing.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Terminology">       <header>Terminology</header>        <article>
+          <p>Many terms are used for aircraft which fly without any persons on board:</p>
+          <ul>
+            <li>
+              The term drone has been used from the early days of aviation, some being applied to remotely flown target aircraft used for practice firing of a battleship's guns, such as the 1920s Fairey Queen and 1930s de Havilland Queen Bee. Later examples included the Airspeed Queen Wasp and Miles Queen Martinet, before ultimate replacement by the GAF Jindivik. The term remains in common use. In addition to the software, autonomous drones also employ a host of advanced technologies that allow them to carry out their missions without human intervention, such as cloud computing, computer vision, artificial intelligence, machine learning, deep learning, and thermal sensors. For recreational uses, an aerial photography drone is an aircraft that has first-person video, autonomous capabilities, or both.
+            </li>
+            <li>An unmanned aerial vehicle (UAV) is defined as a "powered, aerial vehicle that does not carry a human operator, uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or nonlethal payload". UAV is a term that is commonly applied to military use cases. Missiles with warheads are generally not considered UAVs because the vehicle itself is a munition, but certain types of propeller-based missile are often called "kamikaze drones" by the public and media. Also, the relation of UAVs to remote controlled model aircraft is unclear,[citation needed] UAVs may or may not include remote-controlled model aircraft. Some jurisdictions base their definition on size or weight; however, the US FAA defines any unmanned flying craft as a UAV regardless of size. [citation needed] A similar term is remotely piloted aerial vehicle (RPAV).
+            </li>
+            <li>
+              UAVs or RPAVs can also be seen as a component of an unmanned aircraft system (UAS), which also includes a ground-based controller and a system of communications with the aircraft. The term UAS was adopted by the United States Department of Defense (DoD) and the United States Federal Aviation Administration (FAA) in 2005 according to their Unmanned Aircraft System Roadmap 2005–2030. The International Civil Aviation Organization (ICAO) and the British Civil Aviation Authority adopted this term, also used in the European Union's Single European Sky (SES) Air Traffic Management (ATM) Research (SESAR Joint Undertaking) roadmap for 2020. This term emphasizes the importance of elements other than the aircraft. It includes elements such as ground control stations, data links and other support equipment. Similar terms are unmanned aircraft vehicle system (UAVS) and remotely piloted aircraft system (RPAS). Many similar terms are in use. Under new regulations which came into effect 1 June 2019, the term RPAS has been adopted by the Canadian Government to mean "a set of configurable elements consisting of a remotely piloted aircraft, its control station, the command and control links and any other system elements required during flight operation".
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Classification_Types">       <header>Classification Types</header>        <article>
+          <p>
+            UAVs may be classified like any other aircraft, according to design configuration such as weight or engine type, maximum flight altitude, degree of operational autonomy, operational role, etc. According to the United States Department of Defense, UAVs are classified into five categories below:
+          <ul>
+            <li>
+              Size:	Small,	Medium,	Large,	Larger and	Largest.
+              </li>
+              <li>
+              Max take-off wt:	< 20 lb
+(9.1 kg),	> 20 & < 55.	> 55 & < 1320,	>1,320 lb
+(600 kg) and	>1,320 lb
+(600 kg).
+              </li>
+              <li>
+              Operating altitude:	< 1,200 ft
+(370 m),	< 3,500 ft
+(1,100 m),	< 18,000 ft
+(5,500 m),	< 18,000 ft
+(5,500 m) and	> 18,000 ft
+(5,500 m).
+              </li>
+              <li>
+              Speed:	< 100 kn
+(190 km/h),	< 250 kn
+(460 km/h),	< 250 kn
+(460 km/h),	Any speed and	Any speed.
+              </li>
+          </ul>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Range_and_Endurance">
+        <header>Range and Endurance</header>
+        <article>
+          There are usually five categories when UAVs are classified by range and endurance:
+          <ul>
+            <li>
+              Range (km):	< 5,	> 5 & < 50,	> 50 & < 150,	> 150 & < 650	> and 650.
+            </li>
+            <li>
+              Endurance (hr):	0.5 – 0.75,	1–6	8–12,	12 – 36 or 48 and	> 36 or 48
+            </li>
+          </ul>
+          <p>
+            UAV range refers to the distance it can travel from its launch point. Range depends on factors like battery capacity, propulsion efficiency, and mission requirements.</p>
+    <code>
+      <!-- Example code snippet demonstrating calculation of UAV range -->
+      <script>
+        function calculateFlightRange(batteryCapacity, energyConsumptionRate) {
+          // Code to calculate maximum flight range based on battery capacity and consumption rate
+          let maxRange = batteryCapacity / energyConsumptionRate;
+          console.log(`Maximum flight range: ${maxRange} kilometers.`);
+        }
+        calculateFlightRange(5000, 25); // Assuming 25Wh/km energy consumption rate
+      </script>
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Size">
+        <header>Size</header>
+        <p>
+          There are usually four categories when UAVs are classified by size, with at least one of the dimensions (length or wingspan) meet the following respective limits:
+        </p>
+        <p>
+          Length/Wingspan:	<50cm,	>50cm & <2m,	5 –10m and	>10m.
+        </p>
+      </section>
+      <section class="main-section" id="Weight">
+        <header>Weight</header>
+        <article>
+          Based on their weight, drones can be classified into 5 categories:
+          <p>
+            Weight:	<250gm,	>=250gm & <02Kg,	>=02Kg & <25Kg,	>=25kg & <150Kg	and >=150 kg.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Degree_of_Autonomy">
+        <header>Degree of Autonomy</header>
+        <article>
+          <p>
+            Drones could also be classified based on the degree of autonomy in their flight operations. ICAO classifies unmanned aircraft as either remotely piloted aircraft or fully autonomous. Some UAVs offer intermediate degrees of autonomy. For example, a vehicle may be remotely piloted in most contexts but have an autonomous return-to-base operation. Some aircraft types may optionally fly manned or as UAVs, which may include manned aircraft transformed into manned or Optionally Piloted UAVs (OPVs). The flight of UAVs may operate under remote control by a human operator, as remotely piloted aircraft (RPA), or with various degrees of autonomy, such as autopilot assistance, up to fully autonomous aircraft that have no provision for human intervention.
+          </p>
+          <p>Autonomy in UAVs refers to their ability to operate with minimal human intervention. Advanced sensors and algorithms enable autonomous navigation, obstacle avoidance, and mission execution.</p>
+    <code>
+      // Example code snippet demonstrating autonomous waypoint navigation
+      function navigateToWaypoint(latitude, longitude) {
+        // Implement navigation logic here
+        console.log(`Navigating to ${latitude}, ${longitude} autonomously.`);
+      }
+      navigateToWaypoint(37.7749, -122.4194);
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Altitude">
+        <header>Altitude</header>
+        <article>
+          <p>
+            Based on the altitude, the following UAV classifications have been used at industry events such as ParcAberporth Unmanned Systems forum:
+          </p>
+          <ul>
+            <li>
+              Hand-held 2,000 ft (600 m) altitude, about 2 km range.
+            </li>
+            <li>
+              Close 5,000 ft (1,500 m) altitude, up to 10 km range.
+            </li>
+            <li>
+              NATO type 10,000 ft (3,000 m) altitude, up to 50 km range.
+            </li>
+            <li>
+              Tactical 18,000 ft (5,500 m) altitude, about 160 km range.
+            </li>
+            <li>
+              MALE (medium altitude, long endurance) up to 30,000 ft (9,000 m) and range over 200 km.
+            </li>
+            <li>
+              HALE (high altitude, long endurance) over 30,000 ft (9,100 m) and indefinite range.
+            </li>
+            <li>
+              Hypersonic high-speed, supersonic (Mach 1–5) or hypersonic (Mach 5+) 50,000 ft (15,200 m) or suborbital altitude, range over 200 km.
+            </li>
+            <li>
+              Computer Assisted Carrier Guidance System (CACGS) for UAVs.
+            </li>
+          </ul>
+          <p>Altitude control in UAVs is crucial for mission success and safety. Sensors and onboard systems maintain stable flight at various altitudes, from ground level to high elevations.</p>
+    <code>
+      <!-- Example code snippet demonstrating altitude hold using barometric sensor -->
+      <script>
+        function maintainAltitude(targetAltitude) {
+          // Code to maintain UAV altitude using a barometric sensor
+          console.log(`Maintaining altitude at ${targetAltitude} meters.`);
+        }
+        maintainAltitude(100);
+      </script>
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Design">
+        <header>Design</header>
+        <article>
+          <p>
+            Crewed and uncrewed aircraft of the same type generally have recognizably similar physical components. The main exceptions are the cockpit and environmental control system or life support systems. Some UAVs carry payloads (such as a camera) that weigh considerably less than an adult human, and as a result, can be considerably smaller. Though they carry heavy payloads, weaponized military UAVs are lighter than their crewed counterparts with comparable armaments.
+          </p>
+
+          <p>
+            Small civilian UAVs have no life-critical systems, and can thus be built out of lighter but less sturdy materials and shapes, and can use less robustly tested electronic control systems. For small UAVs, the quadcopter design has become popular, though this layout is rarely used for crewed aircraft. Miniaturization means that less-powerful propulsion technologies can be used that are not feasible for crewed aircraft, such as small electric motors and batteries.
+          </p>
+
+          <p>
+            Control systems for UAVs are often different from crewed craft. For remote human control, a camera and video link almost always replace the cockpit windows; radio-transmitted digital commands replace physical cockpit controls. Autopilot software is used on both crewed and uncrewed aircraft, with varying feature sets.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Aircraft_Configuration">
+        <header>Aircraft Configuration</header>
+        <article>
+          <p>UAVs can be designed in different configurations than manned aircraft both because there is no need for a cockpit and its windows, and there is no need to optimize for human comfort, although some UAVs are adapted from piloted examples, or are designed for optionally piloted modes. Air safety is also less of a critical requirement for unmanned aircraft, allowing the designer greater freedom to experiment. Instead, UAVs are typically designed around their onboard payloads and their ground equipment. These factors have led to a great variety of airframe and motor configurations in UAVs.</p>
+          
+          <p>
+          For conventional flight the flying wing and blended wing body offer light weight combined with low drag and stealth, and are popular configurations for many use cases. Larger types which carry a variable payload are more likely to feature a distinct fuselage with a tail for stability, control and trim, although the wing configurations in use vary widely.
+          </p>
+          <p>
+            For uses that require vertical flight or hovering, the tailless quadcopter requires a relatively simple control system and is common for smaller UAVs. Multirotor designs with 6 or more rotors is more common with larger UAVs, where redundancy is prioritized.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Propulsion">
+        <header>Propulsion</header>
+        <article>
+          Traditional internal combustion and jet engines remain in use for drones requiring long range. However, for shorter-range missions electric power has almost entirely taken over. The distance record for a UAV (built from balsa wood and mylar skin) across the North Atlantic Ocean is held by a gasoline model airplane or UAV. Manard Hill "in 2003 when one of his creations flew 1,882 miles across the Atlantic Ocean on less than a gallon of fuel" holds this record.
+          <p>
+            Besides the traditional piston engine, the Wankel rotary engine is used by some drones. This type offers high power output for lower weight, with quieter and more vibration-free running. Claims have also been made for improved reliability and greater range.
+          </p>
+         <p>
+           Small drones mostly use lithium-polymer batteries (Li-Po), while some larger vehicles have adopted the hydrogen fuel cell. The energy density of modern Li-Po batteries is far less than gasoline or hydrogen. However electric motors are cheaper, lighter and quieter. Complex multi-engine, multi-propeller installations are under development with the goal of improving aerodynamic and propulsive efficiency. For such complex power installations, Battery elimination circuitry (BEC) may be used to centralize power distribution and minimize heating, under the control of a microcontroller unit (MCU).
+         </p>
+         <p>UAV propulsion systems vary from traditional combustion engines to modern electric motors. Electric propulsion is popular due to its efficiency, reliability, and reduced environmental impact.</p>
+    <code>
+      <!-- Example code snippet demonstrating control of electric propulsion -->
+      <script>
+        function startElectricMotor(powerPercentage) {
+          // Code to start the electric motor at specified power percentage
+          console.log(`Electric motor started at ${powerPercentage}% power.`);
+        }
+        startElectricMotor(75);
+      </script>
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Computer_Control_Systems">
+        <header>Computer Control Systems</header>
+        <article>
+          UAV computing capability followed the advances of computing technology, beginning with analog controls and evolving into microcontrollers, then system-on-a-chip (SOC) and single-board computers (SBC).
+
+          <p>
+            System hardware for small UAVs is often called the flight controller (FC), flight controller board (FCB) or autopilot. Common UAV-systems control hardware typically incorporate a primary microprocessor, a secondary or failsafe processor, and sensors such as accelerometers, gyroscopes, magnetometers, and barometers into a single module.
+          </p>
+          <p>UAV system control involves managing flight operations, communication with ground stations, and real-time data processing. Robust control systems ensure reliability and safety during missions.</p>
+    <code>
+      <!-- Example code snippet demonstrating communication with ground control station -->
+      <script>
+        function sendTelemetryData(data) {
+          // Code to send telemetry data to ground control station
+          console.log(`Sending telemetry data: ${data}`);
+        }
+        sendTelemetryData("Altitude: 150m, Battery: 75%");
+      </script>
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Autonomy">
+        <header>Autonomy</header>
+        <article>
+          The level of autonomy in UAVs varies widely. UAV manufacturers often build in specific autonomous operations, such as:
+          <ul>
+            <li>Self-level: attitude stabilization on the pitch and roll axes.</li>
+            <li>
+              Altitude hold: The aircraft maintains its altitude using barometric pressure and/or GPS data.
+            </li>
+            <li>
+              Hover/position hold: Keep level pitch and roll, stable yaw heading and altitude while maintaining position using GNSS or inertial sensors.
+            </li>
+            <li>
+              Headless mode: Pitch control relative to the position of the pilot rather than relative to the vehicle's axes.
+            </li>
+            <li>
+              Care-free: automatic roll and yaw control while moving horizontally.
+            </li>
+            <li>
+              Take-off and landing (using a variety of aircraft or ground-based sensors and systems; see also "autoland").
+            </li>
+            <li>
+              Failsafe: automatic landing or return-to-home upon loss of control signal.
+            </li>
+            <li>
+              Return-to-home: Fly back to the point of takeoff (often gaining altitude first to avoid possible intervening obstructions such as trees or buildings).
+            </li>
+            <li>
+              Follow-me: Maintain relative position to a moving pilot or other object using GNSS, image recognition or homing beacon.
+            </li>
+            <li>
+              GPS waypoint navigation: Using GNSS to navigate to an intermediate location on a travel path.
+            </li>
+            <li>
+              Pre-programmed aerobatics (such as rolls and loops)
+            </li>
+          </ul>
+          <p>
+            One approach to quantifying autonomous capabilities is based on OODA terminology, as suggested by a 2002 US Air Force Research Laboratory report, and used in the table on the right.
+          </p>
+           Full autonomy is available for specific tasks, such as airborne refueling or ground-based battery switching.         
+          <p>
+            Other functions available or under development include; collective flight, real-time collision avoidance, wall following, corridor centring, simultaneous localization and mapping and swarming, cognitive radio and machine learning. In this context, computer vision can play an important role for automatically ensuring flight safety.
+          </p>
+          <p>Autonomy in UAVs refers to their ability to operate with minimal human intervention. Advanced sensors and algorithms enable autonomous navigation, obstacle avoidance, and mission execution.</p>
+    <code>
+      // Example code snippet demonstrating autonomous waypoint navigation
+      function navigateToWaypoint(latitude, longitude) {
+        // Implement navigation logic here
+        console.log(`Navigating to ${latitude}, ${longitude} autonomously.`);
+      }
+      navigateToWaypoint(37.7749, -122.4194);
+    </code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              From Wikipedia, the free encyclopedia "UAV" redirects here. For other uses,
+              <a
+                href="https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+                target="_blank"
+                >see UAV (disambiguation).</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
